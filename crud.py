@@ -159,32 +159,3 @@ def get_all_borrowers_of_book(db: Session, book_id: int):
 
     return result
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# def get_book_by_name(db: Session, name: str):
-#     return db.query(models.Book).filter(models.Book.name == name).first()
-
-
-# def get_books_names(db: Session):
-#     book_names = []
-#     for naming in db.query(models.Book.name).all():
-#         book_names.append(naming[0]) 
-#     return book_names
-
-# def update_record(db:Session, id:int, new_data: schemas.book_body):
-#     stmt = update(models.Book).where(models.Book.id == id).values(**new_data.model_dump())
-#     db.execute(stmt)
-#     db.commit()
-#     return "Updated"

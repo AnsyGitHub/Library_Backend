@@ -13,12 +13,7 @@ from datetime import datetime, timedelta
 from jose import JWTError, jwt
 from routers.user import user_router
 
-
-
 models.Base.metadata.create_all(bind=engine)
-
-
-
 
 SECRET_KEY = "a652a9b7fd648256b983af18f2e8e4e5ad48dd7c99c9c89dc1c5217f6ec5bca7"
 ALGORITHM = "HS256"
